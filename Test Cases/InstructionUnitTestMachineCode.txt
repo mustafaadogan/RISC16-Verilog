@@ -1,0 +1,16 @@
+instruction_memory[0]=16'b1011100000001010;
+instruction_memory[1]=16'b1000000000100010;
+instruction_memory[2]=16'b1000011100100000;
+instruction_memory[3]=16'b1011100011111100;
+instruction_memory[4]=16'b1000000001000010;
+instruction_memory[5]=16'b1000011101000000;
+instruction_memory[6]=16'b1000100101000101;
+instruction_memory[7]=16'b1000101000101010;
+instruction_memory[8]=16'b1000100101001101;
+instruction_memory[9]=16'b1101100111111100;
+instruction_memory[10]=16'b1100100100001111;
+instruction_memory[11]=16'b1110100010010110;
+instruction_memory[12]=16'b1010100100000001;
+instruction_memory[13]=16'b0110100100000001;
+instruction_memory[14]=16'b0101100100010010;
+instruction_memory[15]=16'b1011100100000101;

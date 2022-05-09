@@ -1,0 +1,9 @@
+instruction_memory[0]=16'b1011100000000011;
+instruction_memory[1]=16'b1000000000100010;
+instruction_memory[2]=16'b1000011100100000;
+instruction_memory[3]=16'b0101100111111111;
+instruction_memory[4]=16'b1000000000100010;
+instruction_memory[5]=16'b1000011100100000;
+instruction_memory[6]=16'b1000000011100010;
+instruction_memory[7]=16'b1000000101000000;
+instruction_memory[8]=16'b0000100111110010;
