@@ -29,15 +29,43 @@ module Instruction_Memory(
  
  initial begin
 	// Type your instruction list here
-	instruction_memory[0]=16'b1011100000000011;
-	instruction_memory[1]=16'b1000000000100010;
-	instruction_memory[2]=16'b1000011100100000;
-	instruction_memory[3]=16'b0101100111111111;
-	instruction_memory[4]=16'b1000000000100010;
-	instruction_memory[5]=16'b1000011100100000;
-	instruction_memory[6]=16'b1000000011100010;
-	instruction_memory[7]=16'b1000000101000000;
-	instruction_memory[8]=16'b0000100111110010;    
+	
+	instruction_memory[0]=16'b1100101100001000; //slti r3 8
+	instruction_memory[1]=16'b1000000000100010; //andc r0 r1
+	instruction_memory[2]=16'b1000011100100000; //addc rd r1
+
+	instruction_memory[3]=16'b1101100100001000; // muli r1 8
+	instruction_memory[4]=16'b1000000001100010; //andc r0 r3
+	instruction_memory[5]=16'b1000011101100000; //addc rd r3
+
+	instruction_memory[6]=16'b1001100000010100; //jal label
+	instruction_memory[7]=16'b1000100101101000; //or r1 r3
+	instruction_memory[8]=16'b1000000001000010; //andc r0 r2
+	instruction_memory[9]=16'b1000011101000000; //addc rd r2
+
+	instruction_memory[10]=16'b1101101011110000; // muli r2 -16
+	instruction_memory[11]=16'b1000000000100010; //andc r0 r1
+	instruction_memory[12]=16'b1000011100100000; //addc rd r1
+
+	instruction_memory[13]=16'b1101100111110000; // muli r1 -16
+	instruction_memory[14]=16'b1000000001100010; //andc r0 r3
+	instruction_memory[15]=16'b1000011101100000; //addc rd r3
+
+	instruction_memory[16]=16'b1100100100000000; //slti r1 0
+	instruction_memory[17]=16'b1000000000100010; //andc r0 r1
+	instruction_memory[18]=16'b1000011100100000; //addc rd r1
+
+	instruction_memory[19]=16'b0001000000010110; //j exit
+
+	instruction_memory[20]=16'b1000000000100010; //label: andc r0 r1
+
+	instruction_memory[21]=16'b0001110100000000; //jr ra
+
+
+	instruction_memory[22]=16'b1000100001100000; //exit: add r0 r3
+
+	instruction_memory[23]=16'b0011111011111110; //sw sp -2
+   
 	
  end
  assign current_instruction =  instruction_memory[rom_addr]; 

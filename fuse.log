@@ -1,0 +1,23 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/MUSTAFA/Desktop/Codes/CORG_Processor_Design/Risc_16_bit_isim_beh.exe -prj C:/Users/MUSTAFA/Desktop/Codes/CORG_Processor_Design/Risc_16_bit_beh.prj work.Risc_16_bit work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/MUSTAFA/Desktop/Codes/CORG_Processor_Design/CORG_Processor_Design.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module Instruction_Memory
+Compiling module GPRs
+Compiling module alu_control
+Compiling module ALU
+Compiling module Data_Memory
+Compiling module Datapath_Unit
+Compiling module Control_Unit
+Compiling module Risc_16_bit
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 9 Verilog Units
+Built simulation executable C:/Users/MUSTAFA/Desktop/Codes/CORG_Processor_Design/Risc_16_bit_isim_beh.exe
+Fuse Memory Usage: 30012 KB
+Fuse CPU Usage: 296 ms
